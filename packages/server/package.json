@@ -1,0 +1,8 @@
+{
+    "name": "@lookingstars.com/server",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@lookingstars.com/pipe": "1.0.0"
+    }
+}

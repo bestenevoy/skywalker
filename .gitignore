@@ -1,0 +1,28 @@
+# misc
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#pyenv
+.python-version
+__pycache__
+
+.env
+react-app-env.d.ts
+
+#python
+
+packages/shadowless
+
+# Optional eslint cache
+.eslintcache

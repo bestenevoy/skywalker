@@ -1,0 +1,12 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": ["./packages/shadowless"],
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/coverage": true,
+        "**/tsconfig.tsbuildinfo": true,
+        "**/*.log": true,
+    },
+    "git.ignoreLimitWarning": true
+}
