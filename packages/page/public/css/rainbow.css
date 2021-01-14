@@ -3,7 +3,6 @@
 /* @import url(https://fonts.googleapis.com/css?family=Kanit:600); */
 
 .rainbow-text .char { 
-  
   color: hsl(
     calc(360deg * var(--char-percent)
     ), 
@@ -24,8 +23,4 @@
   50% { color: hsl(348, 83%, 81%, 1); }
   75% { color: hsl(.75turn, 90%, 65%); }
   100% { color: hsl(1turn, 90%, 65%); }
-}
-
-body {
-  background-color: black;
 }

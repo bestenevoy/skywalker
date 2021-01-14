@@ -18,18 +18,18 @@ export default function Home() {
     backgroundColor: 'black'
   }
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
+    <div className="min-h-screen flex flex-col">
+      <main className="flex flex-1 flex-col justify-center items-center">
         <>
           <RainbowTextDynamic text="Looking" />
         </>
       </main>
 
       <footer className={styles.footer}>
-        <div style={{ fontFamily: 'arial' }}>Copyright &copy;2020-2021 Looking Stars. All rights reserved.&nbsp;&nbsp;</div>
+        <div>Copyright &copy;2020-2021 Looking Stars. All rights reserved.&nbsp;&nbsp;</div>
         <div>
           <span>
-            Built with &nbsp;<a style={{ color: 'rgba(249,35,0, var(--tw-text-opacity, 1))' }} href="http://nextjs.org">Next.js🔥</a>.&nbsp;&nbsp;
+            Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;&nbsp;
           </span>
           <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>鲁ICP备2021001122</a>
         </div>
