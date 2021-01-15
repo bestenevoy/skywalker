@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 // import _ from 'lodash'
 
 const RainbowTextDynamic = dynamic(
@@ -18,7 +18,7 @@ export default function Home() {
     backgroundColor: 'black'
   }
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="home">
       <main className="flex flex-1 flex-col justify-center items-center">
         <>
           <RainbowTextDynamic text="Looking" />

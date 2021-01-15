@@ -6,10 +6,14 @@
         "**/node_modules": true,
         "**/coverage": true,
         "**/tsconfig.tsbuildinfo": true,
-        "**/*.log": true,
+    "**/*.log": true
     },
     "git.ignoreLimitWarning": true,
+    // Tailwind CSS IntelliSense vscode plugin
     "editor.quickSuggestions": {
         "strings": true
-      }
+      },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false
 }

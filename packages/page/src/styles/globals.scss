@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 html,
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 /* html { height: 100%; } */
-/* 
+ 
 a {
   color: inherit;
   text-decoration: none;
@@ -21,4 +21,8 @@ a {
 
 * {
   box-sizing: border-box;
-} */
+}
+
+.home{
+  @apply min-h-screen flex flex-col select-none;
+}

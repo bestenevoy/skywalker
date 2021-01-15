@@ -5,7 +5,9 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next dev -H 0.0.0.0"
+    "dev": "next dev -H 0.0.0.0",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "dependencies": {
     "@lookingstars.com/pipe": "1.0.0",
@@ -17,13 +19,20 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.1",
+    "sass": "^1.32.4",
     "splitting": "^1.0.6",
     "tailwindcss": "^2.0.2",
     "ts-loader": "^8.0.13"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.1.14",
     "@types/lodash": "^4.14.167",
-    "autoprefixer": "^10.2.1"
+    "autoprefixer": "^10.2.1",
+    "postcss-loader": "^4.1.0"
   },
   "browserslist": {
     "production": [
