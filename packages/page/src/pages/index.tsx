@@ -26,10 +26,10 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div>Copyright &copy;2020-2021 Looking Stars. All rights reserved.&nbsp;&nbsp;</div>
+        <div>Copyright &copy;2020-2021 Looking Stars. All rights reserved.&nbsp;</div>
         <div>
           <span>
-            Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;&nbsp;
+            Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
           </span>
           <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>鲁ICP备2021001122</a>
         </div>
