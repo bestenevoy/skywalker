@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
           
         </Head>
-        <body className="font-serif" >
+        <body className="font-mono" >
           <Main />
           <NextScript />
         </body>

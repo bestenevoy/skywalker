@@ -1,0 +1,61 @@
+.font-sans {
+  font-family: 'Metropolis', 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.font-serif {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-mono {
+  font-family: 'CamingoCode', monospace, sans-serif;
+}
+
+.font-read {
+  font-family: 'DejaVu Sans Book', Arial, Helvetica, sans-serif;
+}
+
+.font-rem-half {
+  font-size: 0.5rem;
+}
+
+.font-rem-2 {
+  font-size: 2rem;
+}
+
+.font-rem-4 {
+  font-size: 4rem;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../assets/fonts/metropolis-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/metropolis-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Book';
+  src: url('../assets/fonts/DejaVuSans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../assets/fonts/ebgaramond.woff2') format('woff2'),
+       url('../assets/fonts/ebgaramond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CamingoCode';
+  src: url('../assets/fonts/CamingoCode-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
