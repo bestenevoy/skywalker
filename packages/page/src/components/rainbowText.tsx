@@ -18,7 +18,7 @@ const rainbowText = (props: rainbowPorps) => {
     <link rel="stylesheet" href="/css/rainbow.css" />
     <link rel="stylesheet" href="/css/splitting-cells.css" />
     <link rel="stylesheet" href="/css/splitting.css" />
-    <div className='rainbow-text animated' style={rainbowStyle} dangerouslySetInnerHTML={{ __html: Splitting.html({ content: props.text, by: 'chars' }) }}></div>
+    <div className='rainbow-text animated select-none' style={rainbowStyle} dangerouslySetInnerHTML={{ __html: Splitting.html({ content: props.text, by: 'chars' }) }}></div>
     {/* <div dangerouslySetInnerHTML={{__html:html()}}></div> */}
   </>
 }

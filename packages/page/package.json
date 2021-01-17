@@ -6,8 +6,8 @@
     "start": "next start",
     "build": "next build",
     "dev": "next dev -H 0.0.0.0",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "story": "start-storybook -p 6006",
+    "story:build": "build-storybook"
   },
   "dependencies": {
     "@lookingstars.com/pipe": "1.0.0",
@@ -21,8 +21,7 @@
     "react-scripts": "^4.0.1",
     "sass": "^1.32.4",
     "splitting": "^1.0.6",
-    "tailwindcss": "^2.0.2",
-    "ts-loader": "^8.0.13"
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.1.14",
@@ -32,7 +31,8 @@
     "@storybook/react": "^6.1.14",
     "@types/lodash": "^4.14.167",
     "autoprefixer": "^10.2.1",
-    "postcss-loader": "^4.1.0"
+    "postcss-loader": "^4.1.0",
+    "ts-loader": "^8.0.13"
   },
   "browserslist": {
     "production": [

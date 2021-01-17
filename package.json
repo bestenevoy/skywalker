@@ -10,7 +10,9 @@
     "scripts": {
         "page:dev": "cd packages/page && npm run dev",
         "page:build": "cd packages/page && cross-env NODE_ENV=production npm run build",
-        "page:start": "cd packages/page && cross-env NODE_ENV=production npm start"
+        "page:start": "cd packages/page && cross-env NODE_ENV=production npm start",
+        "story": "cd packages/page && npm run story",
+        "story:build": "cd packages/page && npm run story:build"
     },
     "dependencies": {
         "typescript": "^4.1.3"

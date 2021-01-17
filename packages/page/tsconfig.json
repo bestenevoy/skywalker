@@ -18,12 +18,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@layouts/*": ["pages/_layouts/*"],
-      "@posts/*": ["_posts/*"],
-      "@api": ["api/index"],
+      "@": ["src/"],
+      "@/*": ["src/*"],
     }
   },
   "include": [

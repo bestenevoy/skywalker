@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import styles from '../styles/Home.module.scss'
+import styles from 'src/styles/Home.module.scss'
 // import _ from 'lodash'
 
 const RainbowTextDynamic = dynamic(
-  () => import('../components/rainbowText'),
+  () => import('src/components/rainbowText'),
   { ssr: false }
 )
 export default function Home() {
