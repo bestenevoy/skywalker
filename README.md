@@ -1,6 +1,6 @@
 # Skywalker
 
-> TS full stack.
+> TS full stack. Based on Nextjs and Nestjs.
 
 > Study and Imitate [somarlyonks/somarl.com](https://github.com/somarlyonks/somarl.com)
 

@@ -1,14 +1,13 @@
-import react, { DOMElement } from 'react'
+import react from 'react'
 import Splitting from "splitting";
 
-type rainbowPorps = {
+interface rainbowPorps {
   text: string
 }
 
 const rainbowText = (props: rainbowPorps) => {
 
   const rainbowStyle: react.CSSProperties = {
-    background: 'black',
     color: '#FFF',
     font: 'italic 500 8vw/1.5 CamingoCode, serif, Kanit',
     textAlign: 'center',

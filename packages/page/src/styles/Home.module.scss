@@ -18,32 +18,6 @@
   align-items: center;
 }
 
-.footer {
-  width: 100%;
-  padding-bottom: 5px;
-  display: flex;
-  font-size: 0.875em;
-  color: #95dee3;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer div {
-  display: inline;
-  margin: auto;
-}
-
-@media (max-width: 640px) {
-  .footer div:first-child {
-    display: none;
-  }
-}
-
 .title a {
   color: #0070f3;
   text-decoration: none;
