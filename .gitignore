@@ -18,7 +18,7 @@ jspm_packages/
 /out/
 
 # production
-/build
+build/
 
 #pyenv
 .python-version
@@ -42,3 +42,10 @@ packages/shadowless
 
 # vercel
 .vercel
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
