@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "page" },
+    { "path": "pipe" },
+    { "path": "server" },
+  ]
+}
