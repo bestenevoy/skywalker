@@ -1,4 +1,4 @@
-const Home = ({ article }): JSX.Element => {
+const Home = ({ article }:{article: {author:S, company:S, content:S}}): JSX.Element => {
   if (!article) return <>"The article wasn't found!"</>
 
   const {author, company, content} = article

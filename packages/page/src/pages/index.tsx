@@ -1,5 +1,4 @@
-import React, { Component, useState } from 'react';
-import Head from 'next/head'
+import React, {useState } from 'react';
 import dynamic from 'next/dynamic'
 import styles from 'src/styles/Home.module.scss'
 // import _ from 'lodash'
@@ -14,9 +13,6 @@ export default function Home() {
     color: isHover ? '#FF9966' : '#95dee3',
   }
 
-  const bodyCSS: React.CSSProperties = {
-    backgroundColor: 'black'
-  }
   return (
     <div className="home">
       <main className="flex flex-1 flex-col justify-center items-center">
