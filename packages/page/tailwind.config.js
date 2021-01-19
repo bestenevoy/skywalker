@@ -34,6 +34,9 @@ module.exports = {
           light: '#e0e6ed',
           lightest: '#f9fafc',
         }
+      },
+      backgroundColor:{
+        smoke: '#F2F2F2'
       }
     }
   },
