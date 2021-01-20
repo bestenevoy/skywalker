@@ -1,4 +1,4 @@
-import FrontendStatic from './FS'
+import { FrontendStatic, BackendStatic } from './EC'
 
 export const getAnalyticsTag = (id=FrontendStatic.BAUDU_ANALYSIS_ID) => {
   if(!id || FrontendStatic.isDev) return {__html:''}
@@ -14,4 +14,4 @@ export const getAnalyticsTag = (id=FrontendStatic.BAUDU_ANALYSIS_ID) => {
   }
 }
 
-export default FrontendStatic
+export {FrontendStatic, BackendStatic}

@@ -3,7 +3,8 @@
 
 
 declare interface Window {
-  FS:{
+  // env constant
+  EC:{
     NEXT_PUBLIC_BAIDU_ANALYTICS_ID?: string,
     isDev: boolean,
   }

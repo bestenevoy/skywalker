@@ -1,5 +1,6 @@
 import React, {useState } from 'react';
 import dynamic from 'next/dynamic'
+import {BackendStatic} from 'src/helpers/index'
 // import _ from 'lodash'
 
 const RainbowTextDynamic = dynamic(
@@ -27,7 +28,7 @@ export default function Home() {
           <span>
             Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
           </span>
-          <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>鲁ICP备2021001122</a>
+          <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>{BackendStatic.BEIAN_ID}</a>
         </div>
       </footer>
     </div>

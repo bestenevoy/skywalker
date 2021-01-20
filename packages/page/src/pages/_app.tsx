@@ -2,11 +2,11 @@ import type { AppProps /*, AppContext */ } from 'next/app'
 import { useEffect } from 'react'
 import '../styles/globals.scss'
 import Head from 'next/head'
-import FrontendStatic, {getAnalyticsTag} from 'src/helpers'
+import {FrontendStatic, getAnalyticsTag} from 'src/helpers'
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    window.FS = FrontendStatic
+    window.EC = FrontendStatic
   })
   return (
     <>
