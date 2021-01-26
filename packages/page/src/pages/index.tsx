@@ -13,7 +13,10 @@ export default function Home() {
   const footer = {
     color: isHover ? '#FF9966' : '#000',
   }
-
+  let ICP;
+  if(BackendStatic.BEIAN_ID){
+    ICP = <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>{BackendStatic.BEIAN_ID}</a>
+  }
   return (
     <div className="home text-center w-screen">
       <main className="flex flex-1 flex-col justify-center items-center">
@@ -28,7 +31,7 @@ export default function Home() {
           <span>
             Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
           </span>
-          <a href="http://beian.miit.gov.cn" style={footer} onMouseEnter={() => { setIsHover(true) }} onMouseLeave={() => setIsHover(false)}>{BackendStatic.BEIAN_ID}</a>
+          {ICP}
         </div>
       </footer>
     </div>
