@@ -1,7 +1,7 @@
 import { FrontendStatic, BackendStatic } from './EC'
 
-export const getAnalyticsTag = (id=FrontendStatic.BAUDU_ANALYSIS_ID) => {
-  if(!id || FrontendStatic.isDev) return {__html:''}
+export const getAnalyticsTag = (id = FrontendStatic.BAUDU_ANALYSIS_ID) => {
+  if (!id || FrontendStatic.isDev) return { __html: '' }
   return {
     __html: `
     var _hmt = _hmt || [];
@@ -14,4 +14,4 @@ export const getAnalyticsTag = (id=FrontendStatic.BAUDU_ANALYSIS_ID) => {
   }
 }
 
-export {FrontendStatic, BackendStatic}
+export { FrontendStatic, BackendStatic }

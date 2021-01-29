@@ -48,3 +48,6 @@ packages/shadowless
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# git page
+**/public/git
