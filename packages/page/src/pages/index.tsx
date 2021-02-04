@@ -26,7 +26,7 @@ export default function Home() {
       </main>
 
       <footer className="flex w-full sm:block md:flex justify-center text-sm">
-        <div>Copyright &copy;2020-2021 <strong><a href="blog.wrz8.com">Rosen Blog</a>.</strong> <span className="hidden sm:inline">All rights reserved.&nbsp;</span></div>
+        <div>Copyright &copy;2020-2021 <strong><a href="https://blog.wrz8.com">Rosen Blog</a>.</strong> <span className="hidden sm:inline">All rights reserved.&nbsp;</span></div>
         <div className="hidden sm:block">
           <span>
             Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
