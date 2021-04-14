@@ -17,6 +17,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         cyan: colors.cyan,
+
         blue: {
           light: '#85d7ff',
           DEFAULT: '#1fb6ff',
@@ -37,7 +38,7 @@ module.exports = {
       },
       backgroundColor:{
         smoke: '#F2F2F2'
-      }
+      },
     }
   },
   variants: {

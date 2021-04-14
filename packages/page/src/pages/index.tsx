@@ -1,5 +1,6 @@
 import React, {useState } from 'react';
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import {BackendStatic} from 'src/helpers/index'
 // import _ from 'lodash'
 
@@ -11,7 +12,7 @@ const RainbowTextDynamic = dynamic(
 export default function Home() {
   const [isHover, setIsHover] = useState(false);
   const footer = {
-    color: isHover ? '#FF9966' : '#000',
+    color: isHover ? '#FF9966' : '',
   }
   let ICP;
   if(BackendStatic.BEIAN_ID){
@@ -25,11 +26,19 @@ export default function Home() {
         </>
       </main>
 
-      <footer className="flex w-full sm:block md:flex justify-center text-sm">
-        <div>Copyright &copy;2020-2021 <strong><a href="https://blog.wrz8.com">Rosen Blog</a>.</strong> <span className="hidden sm:inline">All rights reserved.&nbsp;</span></div>
+      <footer className="flex w-full sm:block md:flex justify-center text-sm p-3">
+        <div>Copyright &copy;2020-2021 &nbsp;
+          <strong>
+            <a href="https://blog.wrz8.com">Blog</a> | 
+            <span className="text-red-500">
+              &nbsp;<Link href="/about">About</Link>
+            </span>
+            .
+          </strong>
+        </div>
         <div className="hidden sm:block">
           <span>
-            Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
+            &nbsp;Built with &nbsp;<a className="text-red-500" href="http://nextjs.org">Next.js🔥</a>.&nbsp;
           </span>
           {ICP}
         </div>

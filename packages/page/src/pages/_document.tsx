@@ -1,14 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
-  // 如果要重写render 就必须按照这个结构来写
   render() {
     return (
       <Html>
         <Head>
           
         </Head>
-        <body className="font-serif">
+        <body className="font-serif relative bottom-0 top-0 right-0 left-0">
           <Main />
           <NextScript />
         </body>

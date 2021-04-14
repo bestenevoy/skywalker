@@ -1,4 +1,4 @@
-import { FrontendStatic, BackendStatic } from './EC'
+import { FrontendStatic, BackendStatic } from './EevConstant'
 
 export const getAnalyticsTag = (id = FrontendStatic.BAUDU_ANALYSIS_ID) => {
   if (!id || FrontendStatic.isDev) return { __html: '' }
