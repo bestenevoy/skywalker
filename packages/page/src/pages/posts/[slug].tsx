@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 
-interface IProps {
+interface postProps {
   header: string,
   content: string,
   datetime?: string
 }
 
-const Posts: React.FunctionComponent<IProps> = ({ header="这里是标题", content="这里是内容", datetime=''}) => {
+const Posts: React.FunctionComponent<postProps> = ({ header="这里是标题", content="这里是内容", datetime=''}) => {
   const router = useRouter()
   console.log('router', router)
   return (
