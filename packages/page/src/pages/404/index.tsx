@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from 'src/styles/404.module.scss'
+import styles from './404.module.scss'
 export default function FourOhFour() {
   const goBack = () => history.back()
   return (
