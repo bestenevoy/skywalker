@@ -8,12 +8,14 @@ const Header = (HeaderProps:{className:string}) => {
       document.body.classList.add('dark')
     }
   }
-  return <nav id={styles[`main-nav`]}>
-    <ul className={HeaderProps.className}>
-      <li><Link href="/">Home</Link></li>
-      <li onClick={changeTheme}>切换主题</li>
-    </ul>
-  </nav>
+  return <header id={styles[`main-nav`]}>
+    <nav className={`${HeaderProps.className} m-auto`}>
+      <ul>
+        <li><Link href="/">Home</Link></li>
+        <li onClick={changeTheme}>Theme</li>
+      </ul>
+    </nav>
+  </header>
 }
 
 export default Header
