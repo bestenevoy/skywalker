@@ -1,0 +1,47 @@
+# misc
+.DS_Store
+*.pem
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+/.pnp
+.pnp.js
+jspm_packages/
+.npm
+
+# next.js
+.next/
+/out/
+
+# production
+build/
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+react-app-env.d.ts
+
+# Optional eslint cache
+.eslintcache
+
+# vercel
+.vercel
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# git page
+**/public/git
+
+docs

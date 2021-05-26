@@ -1,0 +1,1 @@
+export const HOME_TEXT = ["千山鸟飞绝，\n万径人踪灭。\n孤舟蓑笠翁，\n独钓寒江雪。\n<code style='font-size:12px;'>唐代·柳宗元《江雪》</code>"]
