@@ -8,7 +8,7 @@ export default function Home () {
   return (
     <div className="home text-center w-screen relative">
       <main className="flex flex-1 flex-col justify-center items-center">
-        <div className="whitespace-pre text-2xl">
+        <div className="sm:whitespace-pre text-2xl">
           <Img className="object-cover top-0 right-0 absolute" src={src} layout="fill" alt={src} />
           <StringTyping id="string-typing" className="font-bold text-shadow text-4xl text-white mix-blend-difference" />
         </div>
