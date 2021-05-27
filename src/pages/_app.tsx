@@ -12,8 +12,9 @@ function MyApp ({Component, pageProps}: AppProps) {
   return (
     <>
       <Head>
-        <title>Looking Stars</title>
+        <title>Bestenevoy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="all" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <script dangerouslySetInnerHTML={getAnalyticsTag()} />
