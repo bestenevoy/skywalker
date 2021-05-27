@@ -1,11 +1,12 @@
-import Link from 'next/link'
+import {Link, Head} from 'src/components'
 import styles from './404.module.scss'
 
 
 export default function FourOhFour () {
-  const goBack = () => history.back()
+
   return (
     <div className="bg-smoke font-art w-screen h-screen flex justify-center items-center">
+      <Head title="Content Not Found" />
       <div className="overflow-hidden py-8 px-4">
         <div className="text-center text-xs">Error</div>
         <div className={styles.numbers}>
@@ -22,7 +23,7 @@ export default function FourOhFour () {
         <div className={styles.text}>
           <p>Looks like you got lost... Or we trying to confuse you... </p>
           <p>
-            Let us bring you at <span className="underline"><Link href="/">home</Link></span> or <a className="cursor-pointer underline" onClick={goBack}>back.</a></p>
+            Let us bring you at <span className="underline"><Link href="/">home</Link></span> or <a className="cursor-pointer underline" onClick={navigateBack}>back.</a></p>
         </div>
         <div className={styles['sleep-walker']}>
           <div className={styles.man}>
@@ -39,4 +40,9 @@ export default function FourOhFour () {
         </div>
       </div>
     </div>)
+}
+
+const navigateBack = () => {
+  if (history.length) return history.back()
+  return location.assign('/')
 }
