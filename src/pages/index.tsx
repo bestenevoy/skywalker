@@ -5,7 +5,7 @@ import {getRandomImage} from 'src/helpers'
 export default function Home () {
   const src = getRandomImage()
   return (
-    <div className="home text-center w-screen relative">
+    <div className="home min-h-screen flex flex-col select-none text-center w-screen relative">
       <Head title="Home" />
       <main className="flex flex-1 flex-col justify-center items-center">
         <div className="sm:whitespace-pre text-2xl">
