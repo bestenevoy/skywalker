@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+$bg: var(--c-header-bg);
+
+#header {
+  background: $bg;
+  height: $navHeight;
+  line-height: $navHeight;
+
+  & li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 20px 0px 0px;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
