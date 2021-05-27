@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import Img from 'next/image'
 import {StringTyping, ICP} from 'src/components'
+import {getRandomImage} from 'src/helpers'
 
 export default function Home () {
-
+  const src = getRandomImage()
   return (
     <div className="home text-center w-screen relative">
-      <Img className="object-cover z-0 top-0 right-0 absolute" src="/home.jpeg" layout="fill" alt="/home.jpeg" />
-      <main className="z-10 flex flex-1 flex-col justify-center items-center">
+      <main className="flex flex-1 flex-col justify-center items-center">
         <div className="whitespace-pre text-2xl">
-          <StringTyping />
+          <Img className="object-cover top-0 right-0 absolute" src={src} layout="fill" alt={src} />
+          <StringTyping id="string-typing" className="font-bold text-shadow text-4xl text-white mix-blend-difference" />
         </div>
       </main>
       <footer className="z-10 flex w-full sm:block md:flex justify-center text-sm p-3">
