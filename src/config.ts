@@ -1,1 +1,8 @@
-export const HOME_TEXT = ["千山鸟飞绝，\n万径人踪灭。\n孤舟蓑笠翁，\n独钓寒江雪。\n<code style='font-size:12px;'>唐代·柳宗元《江雪》</code>"]
+
+export const HOME_TEXT = ["Life is like a box of chocolates, \n you never know what you are going to get. \n ——Forrest Gump"]
+export const IMAGES = [
+    '/home.jpg',
+    'http://qiniu.wrz8.com/image/z8p9rj.jpeg',
+    'http://qiniu.wrz8.com/image/e7821r.jpeg',
+    'http://qiniu.wrz8.com/image/x86eko.jpeg'
+]

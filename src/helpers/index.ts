@@ -1,7 +1,7 @@
-import { FrontendStatic, BackendStatic } from './EevConstant'
+import {FrontendStatic, BackendStatic} from './EevConstant'
 
 export const getAnalyticsTag = (id = FrontendStatic.BAUDU_ANALYSIS_ID) => {
-  if (!id || FrontendStatic.isDev) return { __html: '' }
+  if (!id || FrontendStatic.isDev) return {__html: ''}
   return {
     __html: `
     var _hmt = _hmt || [];
@@ -13,5 +13,5 @@ export const getAnalyticsTag = (id = FrontendStatic.BAUDU_ANALYSIS_ID) => {
     })();`,
   }
 }
-
-export { FrontendStatic, BackendStatic }
+export {default as getRandomImage} from './getRandomImage'
+export {FrontendStatic, BackendStatic}
