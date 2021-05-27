@@ -2,23 +2,30 @@ import {useEffect} from 'react'
 import Typed from 'typed.js'
 import {HOME_TEXT} from 'src/config'
 
+interface ITypingProps {
+    strings?: string[]
+    className?: string
+    id: string
+}
 
-export default function stringTyping ({strings}: {strings?: string[]}) {
-    const id = "stringtyping"
+export default function stringTyping ({
+    strings,
+    className = '',
+    id = 'strtype'
+}: ITypingProps) {
     const options = {
         strings: strings || HOME_TEXT,
-        typeSpeed: 40,
+        typeSpeed: 20,
         loop: true,
         backDelay: 1200,
-        showCursor: false,
     }
     useEffect(() => {
         const typed = new Typed(`#${id}`, options)
         return () => typed.destroy()
     })
     return (
-        <>
-            <span id={id}></span>
-        </>
+        <p className="font-art">
+            <span className={`${className}`} id={id}></span>
+        </p>
     )
 }
