@@ -1,7 +1,7 @@
 
 declare interface Window {
   // env constant
-  EC: {
+  __APP__: {
     NEXT_PUBLIC_BAIDU_ANALYTICS_ID?: string,
     isDev: boolean,
   }
