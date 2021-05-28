@@ -5,18 +5,20 @@ import {HOME_TEXT} from 'src/config'
 interface ITypingProps {
     strings?: string[]
     className?: string
-    id: string
+    id: string,
+    loop?: boolean
 }
 
 export default function stringTyping ({
     strings,
     className = '',
-    id = 'strtype'
+    id = 'strtype',
+    loop = false,
 }: ITypingProps) {
     const options = {
         strings: strings || HOME_TEXT,
         typeSpeed: 20,
-        loop: true,
+        loop: loop,
         backDelay: 1200,
     }
     useEffect(() => {
