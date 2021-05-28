@@ -12,7 +12,7 @@ export default function CustomImage (props: IProps) {
         e.preventDefault && e.preventDefault()
     }
     const prop = Object()
-    download && Object.assign(prop, {onDragStart: display, onContextMenu: display})
+    !download && Object.assign(prop, {onDragStart: display, onContextMenu: display})
     const newProps = Object.assign(prop, props)
     return <>{Image(newProps)}</>
 }
