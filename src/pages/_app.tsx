@@ -2,9 +2,8 @@ import type {AppProps /*, AppContext */} from 'next/app'
 import {useEffect} from 'react'
 import Head from 'next/head'
 import {FrontendStatic} from 'src/helpers'
-import {Analytics} from 'src/components'
-
 import 'src/styles/globals.scss'
+
 
 function MyApp ({Component, pageProps}: AppProps) {
     useEffect(() => {
@@ -18,7 +17,6 @@ function MyApp ({Component, pageProps}: AppProps) {
                 <meta name="robots" content="all" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
-                {Analytics()}
             </Head>
             <Component {...pageProps} />
         </>

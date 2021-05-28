@@ -1,7 +1,7 @@
 
 import Head from 'next/head'
 import {ReactNode} from 'react'
-
+import {Analytics} from 'src/components'
 
 interface IProps {
     title: string
@@ -14,6 +14,7 @@ export default function CustomHead ({title, children, keywords}: IProps) {
         <Head>
             <title>{title} | Bestenevoy</title>
             <meta name="keywords" content={keywords || "Next TypeScript React CSS JS"} />
+            {Analytics()}
             {children}
         </Head>
     )
